@@ -1,0 +1,475 @@
+ <!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width" />
+    <title>WendySchool</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"> 
+    <link rel="stylesheet" href="../css/style1.css">
+    <meta name="description" content="WendySchool, Sistema de gerênciamento escolar">
+</head>
+
+<body class="page"  style="background: #f7f7f7">
+<section> <header class="fixed-top"> <!-- nabar -->
+ <nav class="navbar navbar-light navbar-expand-lg navigation-clean shadow footer w-100 float-right bg-white" role="navigation">
+        <!-- Titulo do cabeçalho -->
+   <!-- botão de menu responsivo -->
+<h1></h1>
+   <input type="checkbox" class="d-none" id="collapse1">
+   <label for="collapse1" data-toggle="collapse" class="navbar-toggler">
+       
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+
+    </label>
+       <!-- primeira navegação -->
+            <div class="collapse-block navbar-collapse">
+              <ul class="nav navbar-nav ml-auto pr-4">
+                <li>
+ <form class="navbar-search mr-5">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Pesquisar Estudante ..." name="pesquisar">
+                                <div class="input-group-append"><button class="btn btn-primary py-0" type="button" name="botao"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> </svg> </button></div>
+                            </div>
+                        </form></li>
+               
+                <li class="nav-item" role="presentation">
+                  <label class="nav-link size1 contacto" name="usuario" title="Usuário">Pedro&nbsp;Osório&nbsp;&nbsp;<span class="texto-color float-right">  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-person-circle" viewBox="0 0 16 16"> <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/> <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/> </svg> </span></label></li>
+
+                      <li class="nav-item" role="presentation">
+                  <label class="nav-link size1 contacto" name="usuario" title="Usuário">Hora&nbsp;&nbsp;<!-- aqui entra a hora actual --><script type="text/javascript">var data=new Date();var hora=data.getHours();var minuto=data.getMinutes();document.write(hora+":"+minuto);</script></label></li>
+                
+                <li class="nav-item" role="presentation">  
+                       <label class="nav-link size1 contacto" name="data">
+                        <script>
+                            <!--
+ var data=new Date();
+
+ var dia= data.getDate();
+ var mes=data.getMonth()+1;
+ var ano=data.getFullYear(); 
+ 
+
+    if((mes==1)){ 
+  document.write(dia+' de '+'Janeiro'+' de '+ano);
+  } 
+    if((mes==2)){ 
+  document.write(dia+' de '+'Fevereiro'+' de '+ano);
+  } 
+    if((mes==3)){ 
+  document.write(dia+' de '+'Março'+' de '+ano);
+  } 
+    if((mes==4)){ 
+  document.write(dia+' de '+'Abril'+' de '+ano);
+  } 
+    if((mes==5)){ 
+  document.write(dia+' de '+'Maio'+' de '+ano);
+  } 
+    if((mes==6)){ 
+  document.write(dia+' de '+'Junho'+' de '+ano);
+  } 
+  if((mes==7)){ 
+  document.write(dia+' de '+'Julho'+' de '+ano);
+  } 
+  if((mes==8)){ 
+  document.write(dia+' de '+'Agosto'+' de '+ano);
+  } 
+    if((mes==9)){ 
+  document.write(dia+' de '+'Setembro'+' de '+ano);
+  } 
+    if((mes==10)){ 
+  document.write(dia+' de '+'Outubro'+' de '+ano);
+  } 
+    if((mes==11)){ 
+  document.write(dia+' de '+'Novembro'+' de '+ano);
+  } 
+    if((mes==12)){ 
+  document.write(dia+' de '+'Dezembro'+' de '+ano);
+  }    //-->
+ </script>&nbsp;&nbsp; <!-- icone da data actual -->
+<span class="texto-color float-right size2"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-calendar-date-fill" viewBox="0 0 16 16"> <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zm5.402 9.746c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2z"/> <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a12.6 12.6 0 0 1 1.313-.805h.632z"/> </svg></span>
+</label>
+</li>
+            
+                 <li class="nav-item" role="presentation">
+                  <a href="#" class="nav-link size1 bg-danger alert text-white p-2" style="border-radius: 1000px" name="usuario" title="Usuário">Sair</a></li>
+                
+                 </ul>
+        </div> 
+    </aside></nav>
+  </header>
+</section>
+<!-- nav bar -->
+
+<section>
+    <aside id="wrapper">
+        <nav class="shadow navbar-dark h-100 position-fixed fixed-top nome-escola scrol-bar" style="background-color: #1a1d1f;">
+         
+
+                <h1 class="navbar-brand py-4 m-0"> <a class="sidebar-brand-text mx-3" href="#" style="background-image: linear-gradient(45deg ,#0199ff 52%,#ff1b2d 48%);-webkit-background-clip: text;color: transparent;" title="WendySchool">WendySchool</a></h1>
+                <hr class="sidebar-divider my-0 bg-secondary">
+
+                 <div class="p-0 mr_dash">
+           <ul class="nav navbar-nav text-light pl-1" id="accordionSidebar">
+                 
+                    
+              <li class="nav-item list-style" role="presentation"> <a class="nav-link"  style="color:#a6a6a6" href="home.html"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="bi bi-house svg" viewBox="0 0 16 16 "> <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/> <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/> </svg>&nbsp;Home</a></li>
+
+<li class="nav-item dropdown list-style">
+   <details>
+   <summary class="nav-link outline" style="color:#a9a9a9" id="estudantes" aria-expanded="false" for="checando1" name="estudantes" ><span> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-person-lines-fill" viewBox="0 0 16 16"> <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/> </svg> </span>Estudantes</summary>
+
+    <ul class="menu-hidde position-static bg-dark shadow-none">
+     
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="lista_estudante.html" ><span class="texto-color"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16"> <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/> <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/> </svg></span>&nbsp;Lista&nbsp;Estudante</a></li>
+    </ul>
+
+
+  </details></li>
+
+
+
+ <li class="nav-item dropdown list-style">
+     <details>
+       <summary class=" nav-link outline" id="pagamentos" aria-expanded="false" for="checando2" style="color:#a6a6a6" name="Pagamentos"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-currency-exchange" viewBox="0 0 16 16"> <path d="M0 5a5.002 5.002 0 0 0 4.027 4.905 6.46 6.46 0 0 1 .544-2.073C3.695 7.536 3.132 6.864 3 5.91h-.5v-.426h.466V5.05c0-.046 0-.093.004-.135H2.5v-.427h.511C3.236 3.24 4.213 2.5 5.681 2.5c.316 0 .59.031.819.085v.733a3.46 3.46 0 0 0-.815-.082c-.919 0-1.538.466-1.734 1.252h1.917v.427h-1.98c-.003.046-.003.097-.003.147v.422h1.983v.427H3.93c.118.602.468 1.03 1.005 1.229a6.5 6.5 0 0 1 4.97-3.113A5.002 5.002 0 0 0 0 5zm16 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0zm-7.75 1.322c.069.835.746 1.485 1.964 1.562V14h.54v-.62c1.259-.086 1.996-.74 1.996-1.69 0-.865-.563-1.31-1.57-1.54l-.426-.1V8.374c.54.06.884.347.966.745h.948c-.07-.804-.779-1.433-1.914-1.502V7h-.54v.629c-1.076.103-1.808.732-1.808 1.622 0 .787.544 1.288 1.45 1.493l.358.085v1.78c-.554-.08-.92-.376-1.003-.787H8.25zm1.96-1.895c-.532-.12-.82-.364-.82-.732 0-.41.311-.719.824-.809v1.54h-.005zm.622 1.044c.645.145.943.38.943.796 0 .474-.37.8-1.02.86v-1.674l.077.018z"/> </svg>Preços</summary>
+
+ <ul class="menu-hidde position-static bg-dark shadow-none" id="menu-hidde">
+
+
+ <li class="list-style"> <details><summary class="dropdown-item dropdown-item1 text-secondary" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-bookmark-check-fill" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/> </svg>Matricula</summary>
+
+  <ul class="menu-hidde position-static bg-dark shadow-none pt-1" id="menu-hidde">
+     
+       
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="adicionar-matricula.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16"> <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M8 13.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/> </svg>&nbsp;Adicionar preços</a></li> 
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="alterar-matricula.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/> <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/> <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/> </svg> &nbsp;Lista de Preços</a></li>
+</ul>
+      </details>
+      </li>
+
+
+
+ <li class="list-style"> <details><summary class="dropdown-item dropdown-item1 text-secondary" role="presentation"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16"> <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z"/> </svg>&nbsp;Propinas</summary>
+
+  <ul class="menu-hidde position-static bg-dark shadow-none pt-1" id="menu-hidde">
+     
+       
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="adicionar-propina.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16"> <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M8 13.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/> </svg>&nbsp;Adicionar preço</a></li> 
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="alterar-propina.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/> <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/> <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/> </svg> &nbsp;Alterar Preço</a></li>
+</ul>
+      </details>
+      </li>
+
+
+
+
+
+ <li class="list-style"> <details><summary class="dropdown-item dropdown-item1 text-secondary" role="presentation"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/> </svg>&nbsp;Curso</summary>
+
+  <ul class="menu-hidde position-static bg-dark shadow-none pt-1" id="menu-hidde">
+     
+       
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="adicionar-curso.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16"> <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M8 13.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/> </svg>&nbsp;Adicionar preço</a></li> 
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="alterar-curso.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/> <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/> <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/> </svg> &nbsp;Alterar Preço</a></li>
+</ul>
+      </details>
+      </li>
+
+ <li class="list-style"> <details><summary class="dropdown-item dropdown-item1 text-secondary" role="presentation"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="bi bi-journal-plus" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 5.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 .5-.5z"/> <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/> <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/> </svg>&nbsp;Transporte</summary>
+
+  <ul class="menu-hidde position-static bg-dark shadow-none pt-1" id="menu-hidde">
+     
+       
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="adicionar-transporte.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16"> <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M8 13.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/> </svg>&nbsp;Adicionar preço</a></li> 
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="alterar-transporte.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/> <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/> <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/> </svg> &nbsp;Alterar Preço</a></li>
+</ul>
+      </details>
+      </li>
+
+
+
+ <li class="list-style"> <details><summary class="dropdown-item dropdown-item1 text-secondary" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="bi bi-graph-up svg" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z"/> </svg> &nbsp;Uniformes</summary>
+
+  <ul class="menu-hidde position-static bg-dark shadow-none pt-1" id="menu-hidde">
+     
+       
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="adicionar-uniforme.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16"> <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M8 13.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/> </svg>&nbsp;Adicionar preço</a></li> 
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="alterar-uniforme.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/> <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/> <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/> </svg> &nbsp;Alterar Preço</a></li>
+</ul>
+      </details>
+      </li>
+</ul>
+  </details>
+</li>
+
+
+
+<li class="nav-item dropdown list-style">
+  <details>
+   <summary class="nav-link outline" id="transporte"  style="color:#a6a6a6" aria-expanded="false" for="checando1" name="estudantes"><span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-people" viewBox="0 0 16 16"> <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/> </svg></span>&nbsp;Professores</summary>
+
+    <ul class="menu-hidde position-static bg-dark shadow-none" id="menu-hidde">
+     
+        <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="cadastrar-professor.html"><span class="texto-color"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16"> <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/> <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/> </svg></span>&nbsp;Cadastrar&nbsp;Professor</a></li>
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="lista-professor.html" ><span class="texto-color"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16"> <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/> <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/> </svg></span>&nbsp;Lista&nbsp;de&nbsp;Professores</a></li>
+    </ul>
+
+
+  </details>
+</li>
+
+
+
+<li class="nav-item dropdown list-style">
+  <details>
+   <summary class="nav-link outline" id="transporte"  style="color: #a6a6a6" aria-expanded="false" for="checando1" name="estudantes"><span> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-signpost-split" viewBox="0 0 16 16"> <path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"/> </svg> </span>&nbsp;cursos</summary>
+
+    <ul class="menu-hidde position-static bg-dark shadow-none" id="menu-hidde">
+     
+        <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="#"><span class="texto-color"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/> </svg></span>&nbsp;adicionar&nbsp;Cursos</a></li>
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="lista-curso.html" ><span class="texto-color"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/> <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/> <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/> </svg></span>&nbsp;Lista&nbsp;de&nbsp;Curso</a></li>
+    </ul>
+
+
+  </details>
+</li>
+
+
+<li class="nav-item dropdown list-style">
+  <details>
+   <summary class="nav-link outline" id="transporte"  style="color:#a6a6a6" aria-expanded="false" for="checando1" name="estudantes"><span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-book-half" viewBox="0 0 16 16"> <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/> </svg> </span>&nbsp;Disciplina</summary>
+
+    <ul class="menu-hidde position-static bg-dark shadow-none" id="menu-hidde">
+     
+        <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="cadastrar-disciplina.html"><span class="texto-color"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="bi bi-bookmark-plus-fill svg" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z"/> </svg></span>&nbsp;Adicionar&nbsp;Disciplina</a></li>
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="lista-disciplina.html" ><span class="texto-color"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="bi bi-grid-3x3-gap svg" viewBox="0 0 16 16"> <path d="M4 2v2H2V2h2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 2v2H7V2h2zm5 0v2h-2V2h2zM4 7v2H2V7h2zm5 0v2H7V7h2zm5 0h-2v2h2V7zM4 12v2H2v-2h2zm5 0v2H7v-2h2zm5 0v2h-2v-2h2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-2z"/> </svg>
+      </span>&nbsp;Lista&nbsp;de&nbsp;Disciplina</a></li>
+    </ul>
+
+
+  </details>
+</li>
+
+<li class="nav-item dropdown list-style">
+  <details>
+   <summary class="nav-link outline" id="transporte"  style="color: #a6a6a6" aria-expanded="false" for="checando1" name="estudantes"><span>  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-geo-alt" viewBox="0 0 16 16"> <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/> <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/> </svg> </span> Transporte</summary>
+
+    <ul class="menu-hidde position-static bg-dark shadow-none" id="menu-hidde">
+     
+        <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="cadastrados-transporte.html"><span class="texto-color"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16"> <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/> <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/> </svg></span>&nbsp;Estudantes&nbsp;Cadastrados</a></li>
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="transporte-pago.html" ><span class="texto-color"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/> <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/> <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/> </svg></span>&nbsp;Transporte&nbsp;Pago</a></li>
+    </ul>
+
+
+  </details>
+</li> 
+
+
+<li class="nav-item dropdown list-style">
+  <details>
+   <summary class="nav-link outline" id="transporte"  style="color: #a6a6a6" aria-expanded="false" for="checando1" name="estudantes"><span>  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-slack" viewBox="0 0 16 16"> <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/> </svg> </span>Uniforme</summary>
+
+    <ul class="menu-hidde position-static bg-dark shadow-none" id="menu-hidde">
+     
+        <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="estoque.html"><span class="texto-color"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z"/> </svg> </span>&nbsp;Estoque</a></li>
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="uniforme-pago.html" ><span class="texto-color"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16"> <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/> <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/> </svg> </span>&nbsp;Uniformes&nbsp;Pago</a></li>
+    </ul>
+
+
+  </details>
+</li>
+
+
+
+ <li class="nav-item dropdown list-style">
+     <details>
+       <summary class=" nav-link outline" id="pagamentos" aria-expanded="false" for="checando2" style="color: #a6a6a6" name="Pagamentos"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-shield-fill" viewBox="0 0 16 16"> <path d="M5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/> </svg>&nbsp;Privacidade</summary>
+
+    <ul class="menu-hidde position-static bg-dark shadow-none" id="menu-hidde">
+     
+       
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="adicionar-usuario.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16"> <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/> </svg> Adicionar&nbsp;Usuários</a></li>
+ 
+ <li class="list-style"> <details><summary class="dropdown-item dropdown-item1 text-secondary" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16"> <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/> </svg>&nbsp;Alterar Palavra-Passe</summary>
+
+  <ul class="menu-hidde position-static bg-dark shadow-none pt-1" id="menu-hidde">
+     
+       
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="adm.html"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-lock-fill" viewBox="0 0 16 16"> <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/> </svg>&nbsp;Administrador</a></li> 
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="usuario-senha.html"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="svg bi bi-lock-fill" viewBox="0 0 16 16"> <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/> </svg>&nbsp;Usuário</a></li>
+</ul>
+      </details>
+      </li>
+    </ul>
+  </details>
+</li>
+
+  <li class="nav-item list-style" role="presentation">
+ <details>
+   <summary class="nav-link outline" id="transporte"  style="color: #a6a6a6" aria-expanded="false" for="checando1" name="estudantes"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="bi bi-stack svg" viewBox="0 0 16 16"> <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/> <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/> </svg>  &nbsp;Dados Escolar</summary>
+
+    <ul class="menu-hidde position-static bg-dark shadow-none" id="menu-hidde">
+     
+        <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="cadastrados-dados.html"><span class="texto-color">
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16"> <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0zM2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z"/> </svg> </span>&nbsp;Cadadastrar Dados</a></li>
+
+      <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="atualizar-dados.html" ><span class="texto-color">
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16"> <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"/> </svg></span>&nbsp;Dados Escolar</a></li>
+    </ul>
+
+
+  </details></li>
+
+
+<li class="nav-item dropdown list-style">
+  <details>
+   <summary class="nav-link outline" id="transporte"  style="color:#a6a6a6" aria-expanded="false" for="checando1" name="estudantes"><span> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="currentColor" class="bi bi-file-earmark-bar-graph svg" viewBox="0 0 16 16"> <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/> <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/> </svg> </span>Relatório</summary>
+
+    <ul class="menu-hidde position-static bg-dark shadow-none" id="menu-hidde">
+     
+        <li class="list-style"><a class="dropdown-item dropdown-item1 text-secondary" role="presentation" href="relatorio-propina.html"><span class="texto-color"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16"> <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/> <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/> </svg></span>&nbsp;Propinas</a></li>
+
+    </ul>
+
+
+  </details>
+</li>  
+  </ul> </div>
+               
+                 <footer class="sticky-footer text-center" style="margin:77px 0 0 0">
+        <div class="container my-auto ">
+           <label class="text-center "><button class="btn rounded-circle border-0 text-center contacto bg-secondary text-white" id="sidebarToggle" type="button">WS</button></label><br>
+            <label class="text-center my-auto copyright text-secondary"><span>© WendySoft 2021</span></label>
+        </div>
+    </footer>
+           
+        </nav></aside></div> </section>
+<br><br><br><br><br>
+  <aside class="form-row">
+       
+     <span class="shadow navbar-dark bg-white nome-escola"></span>
+ 
+               
+
+<form action="" method="post" target="_self" class="col">
+<div class="col">
+
+
+<label class="pl-3 form-row" for="nome">
+                    <h2 class="text-dark mb-0 font-weight-bold size_h2">Adicionar Cuso</h2><a href="lista-curso.html" class="font-weight-bold text-info float-right nav navbar-nav ml-auto size2 " style="margin: 0 33px">Ver Cursos</a></label>
+
+<div class="ml-3">
+      <label>Para que os estudantes possam entrar em um curso é necessário definir os curso da instituição.</label> 
+    </div>
+    <br> 
+    <div> 
+          <div class=""> 
+                   <aside  class="form-row"> 
+                     <label class="w-50" for="nome"><span class="font-weight-bold text-secondary">Nome do Curso<br></span><input class="form-control" type="text" id="nome" required="#" name="nome">
+                    </label> 
+<br>
+                    
+
+                    <label class="col" for="classe"><span class="font-weight-bold text-secondary">Classe<br></span><select class="form-control" id="classe" required="#" name="classe" ><option>10º</option><option>11º</option><option>12º</option><option>13º</option></select>
+                    </label>
+<br>
+    <label class="col" for="turno"><span class="font-weight-bold text-secondary">Turno<br></span><select class="form-control"   id="turno" required="#" name="turno">
+      <option>manhã</option><option>tarde</option></select>
+                    </label> <br>
+                   
+</aside>
+<aside class="form-row">
+
+                     <label class="col" for="entrada"><span class="font-weight-bold text-secondary">Horário de Entrada<br></span><input class="form-control" type="time" id="entrada" required="#" name="entrada">
+                    </label> 
+                     <label class="col" for="saida"><span class="font-weight-bold text-secondary">Horário de Saida<br></span><input class="form-control" type="time" id="saida" required="#" name="saida">
+                    </label> 
+                    
+                       <label class="col" for="qtd"><span class="font-weight-bold text-secondary">Qtd. Disciplina<br></span><input class="form-control" type="number" id="qtd" required="#" name="qtd">
+                    </label> 
+         </aside>          
+              
+ 
+        <div class="card-body">
+                <aside class="form-row">
+                       <label class="col"><span for="d1" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d1" required="#" name="d1">
+                    </label>
+
+                         <label class="col"><span for="d2" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d2" required="#" name="d2">
+                    </label>
+
+                         <label class="col"><span for="d13" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d3" required="#" name="d3">
+                    </label>
+
+                         <label class="col"><span for="d4" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d4" required="#" name="d4">
+                    </label>
+ 
+                </aside>
+
+                <aside class="form-row">
+                  
+                       <label class="col"><span for="d5" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d5" required="#" name="d5">
+                    </label>
+
+                         <label class="col"><span for="d6" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d6" required="#" name="d6">
+                    </label>
+
+                         <label class="col"><span for="d7" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d7" required="#" name="d7">
+                    </label>
+
+                         <label class="col"><span for="d8" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d8" required="#" name="d8">
+                    </label>
+                </aside>
+
+                <aside class="form-row"> 
+
+                     <label class="col"><span for="d9" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d9" required="#" name="d9">
+                    </label>
+
+                       <label class="col"><span for="d10" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d10" required="#" name="d10">
+                    </label>
+
+                       <label class="col"><span for="d11" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d11" required="#" name="d11">
+                    </label> 
+
+                         <label class="col"><span for="d12" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d12" required="#" name="d12">
+                    </label></aside>
+    
+
+<aside class="form-row">
+  
+   <label class="col"><span for="d14" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d14" required="#" name="d14">
+                    </label>
+
+                     <label class="col"><span for="d14" class="font-weight-bold text-secondary">Disciplina<br></span><input class="form-control" type="text" id="d14" required="#" name="d14">
+                    </label>
+  
+  <label class="col"></label>
+  <label class="col">
+<input type="submit" name="salvar-adm" class="col btn btn-primary btn_second mr-5 mt-3 text-white" value="Adicionar"></label>
+      
+
+</aside>
+             </div>
+        </div>
+ </div>
+   
+
+
+     </aside>
+</div>
+</form></aside>
+     </body>
+     </html>
