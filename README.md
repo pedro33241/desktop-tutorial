@@ -1,1 +1,1 @@
-https://pedro33241.github.io/desktop-tutorial/
+https://pedro33241.github.io/desktop-tutor
